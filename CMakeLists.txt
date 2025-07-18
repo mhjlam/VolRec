@@ -79,13 +79,17 @@ if(OpenMP_CXX_FOUND)
     target_link_libraries(VolRec PRIVATE OpenMP::OpenMP_CXX)
 endif()
 
-# Set output directory for the executable
-set_target_properties(VolRec PROPERTIES RUNTIME_OUTPUT_DIRECTORY "${CMAKE_BINARY_DIR}/../build")
+set_target_properties(VolRec PROPERTIES
+    RUNTIME_OUTPUT_DIRECTORY_DEBUG   "${CMAKE_BINARY_DIR}/Debug"
+    RUNTIME_OUTPUT_DIRECTORY_RELEASE "${CMAKE_BINARY_DIR}/Release"
+    RUNTIME_OUTPUT_DIRECTORY_RELWITHDEBINFO "${CMAKE_BINARY_DIR}/RelWithDebInfo"
+    RUNTIME_OUTPUT_DIRECTORY_MINSIZEREL "${CMAKE_BINARY_DIR}/MinSizeRel"
+)
 
 # Copy frames to the output target directory after build
 add_custom_command(TARGET VolRec POST_BUILD
     COMMAND ${CMAKE_COMMAND} -E copy_directory
-        "${CMAKE_SOURCE_DIR}/example/" "$<TARGET_FILE_DIR:VolRec>/res/"
+        "${CMAKE_SOURCE_DIR}/example/" "$<TARGET_FILE_DIR:VolRec>/example/"
 )
 
 # Copy shaders to the output target directory after build

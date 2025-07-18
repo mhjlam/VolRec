@@ -27,7 +27,6 @@
 CMakeFiles/
 CMakeCache.txt
 cmake_install.cmake
-CMakePresets.json
 Makefile
 install_manifest.txt
 

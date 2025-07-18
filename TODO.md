@@ -22,4 +22,4 @@
 - [x] Fix render order/depth issues
 - [x] General code refactor and cleanup
 - [ ] (Optional) Physically-based calibration (no square padding, units in mm)
-- [ ] Finalization: documentation, images, video
+- [x] Finalization: documentation, images, video
