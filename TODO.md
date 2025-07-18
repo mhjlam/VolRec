@@ -1,0 +1,25 @@
+# TODO
+
+- [x] Calibrator class: resource loading, calibrating cameras
+- [x] Input class: improved and centralized input handling
+- [x] Renderer class: move all rendering from scene to here, query scene for geometry data
+- [x] View class: One camera instance, multiple static views
+- [x] Use OpenGL coordinate system conventions
+- [x] Use original camera parameters in static views (e.g. orientations) and center frustum
+- [x] Modern OpenGL: Buffers, Shaders
+- [x] Improve Voxel visualization
+- [x] Integrate ImGui: replace keyboard shortcuts, toggle fg/bg overlays
+- [x] Render background/foreground images in same window as 3D viewer
+- [x] Instead of choosing volrec set at startup, open empty, and add file dialog to open volrec set
+- [x] Allow command line argument for startup project
+- [x] Fix project loading after refactor
+- [x] Make json reader robust (crashes when settings are missing)
+- [x] Fix calibration
+- [x] Draw chessboard
+- [x] Refactor: Views should be fully initialized by Camera
+- [x] Refactor: Volume should be fullly initialized by Scene
+- [x] Fix freeform camera elevation bug when transitioning from fixed camera to freeform camera
+- [x] Fix render order/depth issues
+- [x] General code refactor and cleanup
+- [ ] (Optional) Physically-based calibration (no square padding, units in mm)
+- [ ] Finalization: documentation, images, video

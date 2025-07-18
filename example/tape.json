@@ -1,0 +1,14 @@
+{
+  "project_name": "Tape Holder",
+  "chessboard": {
+    "cols": 6,
+    "rows": 8,
+    "square": 22
+  },
+  "views": [
+    { "background": "tape/bg1.jpg", "foreground": "tape/fg1.png", "camera": "tape/cb1.yml" },
+    { "background": "tape/bg2.jpg", "foreground": "tape/fg2.png", "camera": "tape/cb2.yml" },
+    { "background": "tape/bg3.jpg", "foreground": "tape/fg3.png", "camera": "tape/cb3.yml" },
+    { "background": "tape/bg4.jpg", "foreground": "tape/fg4.png", "camera": "tape/cb4.yml" }
+  ]
+}

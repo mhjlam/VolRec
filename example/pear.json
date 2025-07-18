@@ -1,0 +1,14 @@
+{
+  "project_name": "Glass Pear",
+  "chessboard": {
+    "cols": 6,
+    "rows": 8,
+    "square": 22
+  },
+  "views": [
+    { "background": "pear/bg1.jpg", "foreground": "pear/fg1.png", "camera": "pear/cb1.yml" },
+    { "background": "pear/bg2.jpg", "foreground": "pear/fg2.png", "camera": "pear/cb2.yml" },
+    { "background": "pear/bg3.jpg", "foreground": "pear/fg3.png", "camera": "pear/cb3.yml" },
+    { "background": "pear/bg4.jpg", "foreground": "pear/fg4.png", "camera": "pear/cb4.yml" }
+  ]
+}

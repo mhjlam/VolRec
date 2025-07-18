@@ -1,0 +1,74 @@
+# Build output
+/build/
+/build*/
+/build-*/
+*.sln
+*.vcxproj*
+*.pdb
+*.obj
+*.exe
+*.dll
+*.lib
+*.exp
+*.ilk
+*.log
+*.idb
+*.tlog
+*.ipch
+*.user
+*.opensdf
+*.sdf
+*.cache
+*.db
+*.VC.db
+*.VC.opendb
+
+# CMake
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+CMakePresets.json
+Makefile
+install_manifest.txt
+
+# Visual Studio
+/.vs/
+*.suo
+*.ncb
+*.sdf
+*.opensdf
+*.VC.db
+*.VC.opendb
+
+# ImGui/GLFW/OpenCV/other third-party binaries
+*.dll
+*.so
+*.dylib
+*.a
+*.lib
+*.pdb
+*.exp
+*.idb
+*.mod
+*.pyc
+
+# Resource/Generated
+*.bin
+*.json.backup
+*.tmp
+*.bak
+
+# Ignore example and test outputs
+/example/*.exe
+/example/*.out
+/example/*.log
+/example/*.tmp
+
+# Ignore user/project-specific files
+*.swp
+*~
+.DS_Store
+Thumbs.db
+
+# Ignore VSCode settings
+.vscode/
