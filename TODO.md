@@ -21,5 +21,5 @@
 - [x] Fix freeform camera elevation bug when transitioning from fixed camera to freeform camera
 - [x] Fix render order/depth issues
 - [x] General code refactor and cleanup
-- [ ] (Optional) Physically-based calibration (no square padding, units in mm)
 - [x] Finalization: documentation, images, video
+- [ ] (Optional) Physically-based calibration (no square padding, units in mm)

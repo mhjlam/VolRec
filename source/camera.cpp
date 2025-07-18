@@ -226,7 +226,19 @@ void Camera::run_calibration() {
         cv::Mat preview;
         cv::cvtColor(images[i], preview, cv::COLOR_GRAY2BGR);
         cv::drawChessboardCorners(preview, cv::Size(rows, cols), image_points[i], true);
-        std::string win_name = std::format("View {} - Press any key to continue, ESC to abort", i + 1);
+
+        // Draw instruction text at the top, centered, small
+        std::string instruction = "Press any key to continue or ESC to abort";
+        int font_face = cv::FONT_HERSHEY_SIMPLEX;
+        double font_scale = 0.5;
+        int thickness = 1;
+        int baseline = 0;
+        cv::Size text_size = cv::getTextSize(instruction, font_face, font_scale, thickness, &baseline);
+        int x = (preview.cols - text_size.width) / 2;
+        int y = text_size.height + 10; // 10 pixels from top
+        cv::putText(preview, instruction, cv::Point(x, y), font_face, font_scale, cv::Scalar(0, 255, 255), thickness, cv::LINE_AA);
+
+        std::string win_name = std::format("Calibration: View {}", i + 1);
         cv::imshow(win_name, preview);
         int key = cv::waitKey(0);
         cv::destroyWindow(win_name);

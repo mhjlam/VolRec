@@ -1,6 +1,12 @@
+<!-- markdownlint-disable MD033 -->
+
 # VolRec
 
 Volumetric Reconstruction and Visualization
+
+<p align="center">
+   <img src="media/VolRec.gif" alt="VolRec Demo" width="600"/>
+</p>
 
 ## Overview
 
@@ -8,10 +14,18 @@ Volumetric Reconstruction and Visualization
 
 ## Features
 
-- **OpenGL 4.5 Pipeline**: Modern OpenGL rendering architecture using buffers, textures, and shaders.
-- **Volumetric Reconstruction**: Reconstruct 3D volumes from multiple camera views and calibration data, allowing visualization of volumetric data generated from 2D images.
-- **Meshes and Volumes**: Supports both mesh-based (box, floor, axes, frustums, checkerboard) and volumetric (point cloud and solid voxels) visualization.
-- **Project Loading**: Load calibration projects containing camera views, chessboard settings, and image resources. Projects files in JSON format can be opened and closed via the UI.
+<table align="center">
+   <tr>
+      <td align="center"><img src="media/VolRec1.png" alt="Freeform Camera" width="300"/><br>Freeform Camera</td>
+      <td align="center"><img src="media/VolRec2.png" alt="Calibration" width="300"/><br>Calibration</td>
+      <td align="center"><img src="media/VolRec3.png" alt="Photo Overlay" width="300"/><br>Photo Overlay</td>
+   </tr>
+</table>
+
+- **Rendering Pipeline**: Modern OpenGL rendering architecture using buffers, textures, and shaders. Supports both mesh-based (box, floor, axes, frustums, checkerboard) and volumetric (point cloud and solid voxels) visualization.
+- **Camera Calibration**: Calibrate cameras and reconstruct scenes from photographic material that includes a chessboard pattern and background/foreground images.
+- **Project Loading**: Open project files in JSON format that include camera views, chessboard configurations, and image resources.
+- **Camera Navigation**: Seamlessly switch between calibrated static camera views and a freeform orbit camera for intuitive 3D exploration. In static camera views, overlay the original background photo to visually compare and align the reconstruction with source images.
 - **Interactive User Interface**: ImGui-based overlay for project loading, camera switching, and visualization toggles.
 
 ## User Guide

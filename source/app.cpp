@@ -248,6 +248,21 @@ bool App::initialize_window() {
         return false;
     }
 
+    // Set window icon using OpenCV and GLFW
+    cv::Mat icon_img = cv::imread("VolRec.png", cv::IMREAD_UNCHANGED);
+    if (!icon_img.empty() && icon_img.channels() == 4) {
+        // Convert BGRA to RGBA
+        cv::cvtColor(icon_img, icon_img, cv::COLOR_BGRA2RGBA);
+        GLFWimage icon;
+        icon.width = icon_img.cols;
+        icon.height = icon_img.rows;
+        icon.pixels = icon_img.ptr<unsigned char>();
+        glfwSetWindowIcon(window_, 1, &icon);
+    }
+    else {
+        std::cerr << "Failed to load VolRec.png for window icon." << std::endl;
+    }
+
     // Set the application context
     glfwMakeContextCurrent(window_);
     glfwSetWindowUserPointer(window_, &app_context_);

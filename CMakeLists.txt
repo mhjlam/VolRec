@@ -50,6 +50,9 @@ set(SOURCE_FILES
     source/model/frustum.cpp
     source/model/model.cpp
     source/model/volume.cpp
+
+    # Resource file for application icon
+    source/VolRec.rc
 )
 
 # Set executable name
@@ -96,4 +99,9 @@ add_custom_command(TARGET VolRec POST_BUILD
 add_custom_command(TARGET VolRec POST_BUILD
     COMMAND ${CMAKE_COMMAND} -E copy_directory
         "${CMAKE_SOURCE_DIR}/shaders/" "$<TARGET_FILE_DIR:VolRec>/shaders/"
+)
+
+add_custom_command(TARGET VolRec POST_BUILD
+    COMMAND ${CMAKE_COMMAND} -E copy
+        "${CMAKE_SOURCE_DIR}/VolRec.png" "$<TARGET_FILE_DIR:VolRec>/VolRec.png"
 )
