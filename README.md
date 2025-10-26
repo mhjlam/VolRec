@@ -5,7 +5,7 @@
 Volumetric Reconstruction and Visualization
 
 <p align="center">
-   <img src="media/VolRec.gif" alt="VolRec Demo" width="600"/>
+   <img src="media/volrec.gif" alt="Demo Animation" width="720"/>
 </p>
 
 ## Overview
@@ -16,9 +16,9 @@ Volumetric Reconstruction and Visualization
 
 <table align="center">
    <tr>
-      <td align="center"><img src="media/VolRec1.png" alt="Freeform Camera" width="300"/><br>Freeform Camera</td>
-      <td align="center"><img src="media/VolRec2.png" alt="Calibration" width="300"/><br>Calibration</td>
-      <td align="center"><img src="media/VolRec3.png" alt="Photo Overlay" width="300"/><br>Photo Overlay</td>
+      <td align="center"><img src="media/camera.png" alt="Freeform Camera" width="300"/><br>Freeform Camera</td>
+      <td align="center"><img src="media/calibrate.png" alt="Calibration" width="300"/><br>Calibration</td>
+      <td align="center"><img src="media/overlay.png" alt="Photo Overlay" width="300"/><br>Photo Overlay</td>
    </tr>
 </table>
 
