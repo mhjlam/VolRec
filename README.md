@@ -2,7 +2,10 @@
 
 # VolRec
 
-Volumetric Reconstruction and Visualization
+**Volumetric Reconstruction and Visualization**
+
+> Maurits Lam  
+> 2025
 
 <p align="center">
    <img src="media/volrec.gif" alt="Demo Animation" width="720"/>
